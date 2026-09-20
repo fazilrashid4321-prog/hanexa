@@ -1,911 +1,1576 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Xevron | Digital Agency & Creative Web Solutions</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanexa | Digital Technology Agency</title>
     <meta
       name="description"
-      content="Grow your brand with Xevron, a digital agency specializing in web design, development, and marketing strategies that help businesses stand out online."
+      content="Hanexa builds modern websites, mobile apps, AI solutions, automation systems and digital products for businesses."
     />
     <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Xevron | Digital Agency & Creative Web Solutions"
-    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hanexa | Digital Technology Agency" />
     <meta
       property="og:description"
-      content="Expert web design, development, and digital marketing to accelerate your brand’s growth."
+      content="Hanexa builds modern websites, mobile apps, AI solutions, automation systems and digital products for businesses."
     />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta
-      name="twitter:title"
-      content="Xevron | Digital Agency & Creative Web Solutions"
-    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hanexa | Digital Technology Agency" />
     <meta
       name="twitter:description"
-      content="Creative design, expert development, and proven marketing services for business growth."
+      content="Hanexa builds modern websites, mobile apps, AI solutions, automation systems and digital products for businesses."
     />
+
+    <link rel="canonical" href="https://hanexa.agency/" />
+
+    <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Ambient Visual Elements -->
+    <div class="bg-grid-ambient"></div>
+    <div class="bg-radial-glow-1"></div>
+    <div class="bg-radial-glow-2"></div>
+
     <div id="wrapper">
       <div id="content">
-        <header class="flex-column">
-          <nav class="flex">
-            <div class="hamburger-menu">
-              <div id="hamburger-btn">
-                <b></b>
-                <b></b>
-                <b></b>
-              </div>
-              <div class="hamburger-content">
-                <!-- nav-links will be moved here on mobile -->
-              </div>
-            </div>
-            <p class="logo">Xev<span>ron</span></p>
-            <div class="nav-right flex">
-              <div class="nav-links">
-                <a href="#process">Process</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#faq">FAQ</a>
-              </div>
-              <a href="#pricing" class="get-started">
-                <button class="btn filled-btn">Get Started</button>
+        <!-- Header & Navigation -->
+        <header id="main-header">
+          <nav class="nav-container">
+            <a href="#hero" class="logo">
+              <span class="logo-text">HANEXA</span>
+              <span class="logo-dot"></span>
+            </a>
+
+            <ul class="nav-links">
+              <li><a href="#hero" class="active">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#why-hanexa">Why Hanexa</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+              <a
+                href="https://wa.me/917006505391"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm"
+              >
+                <span>Start a Project</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
               </a>
+
+              <div class="hamburger-menu">
+                <button id="hamburger-btn" aria-label="Toggle mobile menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
             </div>
           </nav>
         </header>
-        <section class="hero flex-column">
-          <p class="hero-title">
-            Bringing Your <br />
-            Dream Into <em>Reality</em>
-          </p>
-          <p class="hero-para">
-            We increase revenue and ensure sustainable long-term growth <br />
-            for your business through powerful Webflow websites.
-          </p>
-          <a href="#pricing">
-            <button class="btn filled-btn">Book A Meeting</button>
-          </a>
-          <div class="glow"></div>
-          <div class="star1 star"></div>
-          <div class="star2 star"></div>
-          <div class="star3 star"></div>
-          <div class="brands">
-            <p>TRUSTED BY AMAZING BRANDS</p>
-            <div class="brands-content flex">
-              <img
-                src="assets/images/icons/hero/brandLayers.svg"
-                alt="Layers fictional company"
-              />
-              <img
-                src="assets/images/icons/hero/brandQuotient.svg"
-                alt="Quotient fictional company"
-              />
-              <img
-                src="assets/images/icons/hero/brandCircooles.svg"
-                alt="Circooles fictional company"
-              />
-              <img
-                src="assets/images/icons/hero/brandHourglass.svg"
-                alt="Hourglass fictional company"
-              />
-              <img
-                src="assets/images/icons/hero/brandCommandR.svg"
-                alt="Command-R fictional company"
-              />
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer" id="mobile-drawer">
+          <div class="mobile-drawer-header">
+            <a href="#hero" class="logo">
+              <span class="logo-text">HANEXA</span>
+              <span class="logo-dot"></span>
+            </a>
+            <button id="mobile-drawer-close" class="mobile-close-btn" aria-label="Close navigation">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-nav-links">
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#process">Process</a>
+            <a href="#why-hanexa">Why Hanexa</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="mobile-drawer-footer">
+            <a
+              href="https://wa.me/917006505391"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp"
+              style="width: 100%; justify-content: center;"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>Chat on WhatsApp</span>
+            </a>
+            <div class="mobile-drawer-info">
+              <p><strong>Founder:</strong> Haneef Rather</p>
+              <p>Baba Pora, Zoonimar, Srinagar, Kashmir</p>
             </div>
           </div>
-        </section>
+        </div>
+
         <main>
-          <section class="section flex-column" id="process">
-            <div class="prcoess-content flex-column">
-              <div class="intro-container flex">
-                <div class="intro1">
-                  <p>HOW WE WORK</p>
-                  <p>Get a dedicated design team at fraction of the cost.</p>
+          <!-- Hero Section -->
+          <section class="section hero" id="hero">
+            <div class="hero-grid">
+              <div class="hero-content">
+                <div class="hero-pill">
+                  <span class="hero-pill-ping"></span>
+                  <span>Serving Clients Worldwide · 100% Bespoke Code</span>
                 </div>
-                <div class="intro2">
-                  <p>
-                    Grow your brand with high-quality design for a flat monthly
-                    fee. Work with senior designers. Subscribe and make as many
-                    requests as you need - no limits.
-                  </p>
-                  <a href="#pricing">
-                    <button class="btn filled-btn">See Pricing</button>
+
+                <h1 class="hero-title">
+                  We Build <span class="gradient-text">Digital Products</span> That Move Businesses Forward.
+                </h1>
+
+                <p class="hero-description">
+                  Hanexa is a digital technology agency providing custom websites, mobile applications, AI solutions, business automation, and digital growth services engineered for high performance.
+                </p>
+
+                <div class="hero-cta-group">
+                  <a
+                    href="https://wa.me/917006505391"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-whatsapp"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                    </svg>
+                    <span>Start a Project</span>
+                  </a>
+
+                  <a href="#services" class="btn btn-secondary">
+                    <span>Explore Services</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                    </svg>
                   </a>
                 </div>
+
+                <div class="hero-badges-row">
+                  <div class="hero-badge-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                    <span>Bespoke Engineering</span>
+                  </div>
+                  <div class="hero-badge-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                    <span>Next-Gen AI & Automation</span>
+                  </div>
+                  <div class="hero-badge-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M12 6v6l4 2"/>
+                    </svg>
+                    <span>Rapid Turnaround</span>
+                  </div>
+                </div>
               </div>
-              <div class="process-icons flex"></div>
-              <div class="process-cards-container flex">
-                <div class="process-card">
-                  <figure class="process-icon">
-                    <img
-                      src="assets/images/icons/process/process1.svg"
-                      alt=""
-                    />
-                  </figure>
-                  <h2>Subscribe & get started</h2>
-                  <p>
-                    Submit as many design tasks as you need without worrying
-                    about individual project fees.
-                  </p>
+
+              <!-- Right-side Visual (Interactive Tech Showcase Card) -->
+              <div class="hero-visual-wrapper">
+                <div class="floating-badge badge-top-left">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2.5">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                  <span>Production Ready Stacks</span>
                 </div>
-                <div class="process-card">
-                  <figure class="process-icon">
-                    <img
-                      src="assets/images/icons/process/process2.svg"
-                      alt=""
-                    />
-                  </figure>
-                  <h2>Polished designs - on time</h2>
-                  <p>
-                    Our designers get to work to deliver your request. Receive
-                    your design within a few days.
-                  </p>
+
+                <div class="hero-tech-card">
+                  <div class="tech-card-header">
+                    <div class="tech-dots">
+                      <span class="tech-dot dot-red"></span>
+                      <span class="tech-dot dot-yellow"></span>
+                      <span class="tech-dot dot-green"></span>
+                    </div>
+                    <div class="tech-status-badge">
+                      <span class="pulse-dot"></span>
+                      <span>Engineered for 2026</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-pipeline-row">
+                    <div class="pipeline-item">
+                      <div class="pipeline-info">
+                        <div class="pipeline-icon ai">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/>
+                          </svg>
+                        </div>
+                        <div class="pipeline-text">
+                          <h4>AI Agents & Automation</h4>
+                          <p>Autonomous pipelines & chatbots</p>
+                        </div>
+                      </div>
+                      <span class="pipeline-status">Active</span>
+                    </div>
+
+                    <div class="pipeline-item">
+                      <div class="pipeline-info">
+                        <div class="pipeline-icon web">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                          </svg>
+                        </div>
+                        <div class="pipeline-text">
+                          <h4>Web & Mobile Engineering</h4>
+                          <p>Responsive, lightning fast code</p>
+                        </div>
+                      </div>
+                      <span class="pipeline-status">Optimized</span>
+                    </div>
+
+                    <div class="pipeline-item">
+                      <div class="pipeline-info">
+                        <div class="pipeline-icon app">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                          </svg>
+                        </div>
+                        <div class="pipeline-text">
+                          <h4>Global Remote Delivery</h4>
+                          <p>Clients in India & Worldwide</p>
+                        </div>
+                      </div>
+                      <span class="pipeline-status">Connected</span>
+                    </div>
+                  </div>
+
+                  <div class="tech-metrics-grid">
+                    <div class="metric-box">
+                      <div class="metric-value">100%</div>
+                      <div class="metric-label">Custom Code</div>
+                    </div>
+                    <div class="metric-box">
+                      <div class="metric-value">&lt;100ms</div>
+                      <div class="metric-label">Core Latency</div>
+                    </div>
+                    <div class="metric-box">
+                      <div class="metric-value">24/7</div>
+                      <div class="metric-label">Support</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="process-card">
-                  <img src="assets/images/icons/process/process3.svg" alt="" />
-                  <h2>Revisions made simple</h2>
-                  <p>
-                    Custom designs, prompt replies and as many revisions as you
-                    need for perfect results.
-                  </p>
+
+                <div class="floating-badge badge-bottom-right">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                  <span>Full Code Ownership</span>
                 </div>
               </div>
             </div>
           </section>
-          <section class="section flex-column" id="services">
-            <div class="title">
-              <p>OUR CAPABILITIES</p>
-              <h2>We can help you with...</h2>
+
+          <!-- Services Section (All 25 Services) -->
+          <section class="section" id="services">
+            <div class="section-header">
+              <div class="section-tag">OUR CAPABILITIES</div>
+              <h2 class="section-title">
+                Full-Spectrum <span class="highlight">Technology Services</span>
+              </h2>
+              <p class="section-subtitle">
+                Explore our comprehensive suite of 25 digital services, engineered with precision, modern design standards, and scalable architecture.
+              </p>
             </div>
-            <div class="service-names flex">
-              <p class="btn">Web Design & UI</p>
-              <p class="btn">Social media visuals</p>
-              <p class="btn">Infographics</p>
-              <p class="btn">Design system</p>
-              <p class="btn">Email design</p>
-              <p class="btn">Stationery</p>
-              <p class="btn">Icons</p>
-              <p class="btn">Packaging & merch</p>
-              <p class="btn">Signage</p>
-              <p class="btn">Brochures</p>
-              <p class="btn">Logos & branding</p>
-              <p class="btn">Digital ads</p>
-              <p class="btn">Wireframes</p>
+
+            <!-- Intelligent Category Filter Tabs -->
+            <div class="services-tabs-nav">
+              <button class="service-tab-btn active" data-filter="all">All Services (25)</button>
+              <button class="service-tab-btn" data-filter="web">Web & Platforms</button>
+              <button class="service-tab-btn" data-filter="mobile">Mobile Apps</button>
+              <button class="service-tab-btn" data-filter="ai">AI & Automation</button>
+              <button class="service-tab-btn" data-filter="design">UI/UX & Creative</button>
+              <button class="service-tab-btn" data-filter="growth">Digital Growth</button>
+              <button class="service-tab-btn" data-filter="cloud">Cloud & Software</button>
             </div>
-            <div class="intro-container flex">
-              <div class="intro1">
-                <p>BENEFITS</p>
-                <p>
-                  The design subscription that connects you to your dream team.
+
+            <div class="services-grid">
+              <!-- 1. Website Development -->
+              <div class="service-card" data-category="web">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="3" y1="9" x2="21" y2="9"/>
+                      <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Web & Platforms</span>
+                </div>
+                <h3 class="service-title">Website Development</h3>
+                <p class="service-desc">
+                  Bespoke, high-performance websites engineered for speed, search visibility, and seamless responsiveness across all screen dimensions.
                 </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Website%20Development" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
               </div>
-              <div class="intro2">
-                <p>
-                  A subscription can alleviate the stress of staffing, managing
-                  expenses, or make design calls like a Creative Director. We
-                  partner with you to ensure that your design elevates your
-                  brand to new levels.
+
+              <!-- 2. Web Application Development -->
+              <div class="service-card" data-category="web">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="16 18 22 12 16 6"/>
+                      <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Web & Platforms</span>
+                </div>
+                <h3 class="service-title">Web Application Development</h3>
+                <p class="service-desc">
+                  Complex dynamic web applications with reactive frontends, robust backend logic, secure authentication, and database orchestration.
                 </p>
-                <a href="#pricing">
-                  <button class="btn filled-btn">See Pricing</button>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Web%20Application%20Development" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 3. Mobile App Development -->
+              <div class="service-card" data-category="mobile">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                      <line x1="12" y1="18" x2="12.01" y2="18"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Mobile Apps</span>
+                </div>
+                <h3 class="service-title">Mobile App Development</h3>
+                <p class="service-desc">
+                  Native and hybrid mobile applications built for intuitive gesture navigation, offline capabilities, push notifications, and App Store readiness.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Mobile%20App%20Development" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 4. Flutter App Development -->
+              <div class="service-card" data-category="mobile">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                      <polyline points="2 17 12 22 22 17"/>
+                      <polyline points="2 12 12 17 22 12"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Mobile Apps</span>
+                </div>
+                <h3 class="service-title">Flutter App Development</h3>
+                <p class="service-desc">
+                  Unified multi-platform mobile experiences for iOS and Android from a single codebase, delivering 60 FPS performance and native fidelity.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Flutter%20App%20Development" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 5. UI/UX Design -->
+              <div class="service-card" data-category="design">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                      <line x1="9" y1="9" x2="9.01" y2="9"/>
+                      <line x1="15" y1="9" x2="15.01" y2="9"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">UI/UX & Creative</span>
+                </div>
+                <h3 class="service-title">UI/UX Design</h3>
+                <p class="service-desc">
+                  User-centered interface and interaction design, interactive wireframing, clickable prototypes, and comprehensive design systems.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20UI/UX%20Design" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 6. Graphic Design -->
+              <div class="service-card" data-category="design">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                      <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                      <path d="M2 2l7.586 7.586"/>
+                      <circle cx="11" cy="11" r="2"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">UI/UX & Creative</span>
+                </div>
+                <h3 class="service-title">Graphic Design</h3>
+                <p class="service-desc">
+                  Striking visual assets, brand collateral, marketing creatives, and digital illustrations that elevate corporate perception and engage audiences.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Graphic%20Design" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 7. Logo Design -->
+              <div class="service-card" data-category="design">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">UI/UX & Creative</span>
+                </div>
+                <h3 class="service-title">Logo Design</h3>
+                <p class="service-desc">
+                  Memorable, versatile brand marks and complete brand identity guidelines that establish credibility and distinguish your company.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Logo%20Design" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 8. Video Editing -->
+              <div class="service-card" data-category="design">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="23 7 16 12 23 17 23 7"/>
+                      <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">UI/UX & Creative</span>
+                </div>
+                <h3 class="service-title">Video Editing</h3>
+                <p class="service-desc">
+                  High-retention commercial video edits, pacing adjustments, sound design, color grading, and formats optimized for digital storytelling.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Video%20Editing" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 9. Motion Graphics -->
+              <div class="service-card" data-category="design">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polygon points="10 8 16 12 10 16 10 8"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">UI/UX & Creative</span>
+                </div>
+                <h3 class="service-title">Motion Graphics</h3>
+                <p class="service-desc">
+                  Dynamic animated explainers, kinetic typography, product showcase reels, and interactive UI micro-animations that mesmerize viewers.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Motion%20Graphics" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 10. Social Media Management -->
+              <div class="service-card" data-category="growth">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Digital Growth</span>
+                </div>
+                <h3 class="service-title">Social Media Management</h3>
+                <p class="service-desc">
+                  Strategic content calendars, community growth curation, aesthetic profile management, and targeted organic distribution.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Social%20Media%20Management" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 11. Digital Marketing -->
+              <div class="service-card" data-category="growth">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                      <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Digital Growth</span>
+                </div>
+                <h3 class="service-title">Digital Marketing</h3>
+                <p class="service-desc">
+                  Data-driven multi-channel growth funnels designed to capture qualified interest, maximize conversion rates, and lower acquisition costs.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Digital%20Marketing" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 12. Meta Ads -->
+              <div class="service-card" data-category="growth">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Digital Growth</span>
+                </div>
+                <h3 class="service-title">Meta Ads</h3>
+                <p class="service-desc">
+                  High-converting Facebook & Instagram ad campaigns with A/B creative testing, custom audience retargeting, and rigorous ROAS tracking.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Meta%20Ads" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 13. SEO -->
+              <div class="service-card" data-category="growth">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="11" cy="11" r="8"/>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Digital Growth</span>
+                </div>
+                <h3 class="service-title">SEO</h3>
+                <p class="service-desc">
+                  Technical SEO audits, semantic on-page optimization, site architecture speed tuning, and keyword indexing to secure top organic ranks.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20SEO" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 14. AI Solutions -->
+              <div class="service-card" data-category="ai">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">AI & Automation</span>
+                </div>
+                <h3 class="service-title">AI Solutions</h3>
+                <p class="service-desc">
+                  Custom artificial intelligence integration, LLM fine-tuning, RAG document search engines, and automated intelligence pipelines for operations.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20AI%20Solutions" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 15. AI Chatbots -->
+              <div class="service-card" data-category="ai">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">AI & Automation</span>
+                </div>
+                <h3 class="service-title">AI Chatbots</h3>
+                <p class="service-desc">
+                  Context-aware conversational agents trained on proprietary company knowledge to qualify leads and provide 24/7 autonomous support.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20AI%20Chatbots" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 16. AI Calling Agents -->
+              <div class="service-card" data-category="ai">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">AI & Automation</span>
+                </div>
+                <h3 class="service-title">AI Calling Agents</h3>
+                <p class="service-desc">
+                  Ultra-realistic voice AI agents capable of handling inbound customer inquiries, booking appointments, and outbound follow-up calls naturally.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20AI%20Calling%20Agents" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 17. WhatsApp Automation -->
+              <div class="service-card" data-category="ai">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">AI & Automation</span>
+                </div>
+                <h3 class="service-title">WhatsApp Automation</h3>
+                <p class="service-desc">
+                  Official WhatsApp Business Cloud API workflows, automated notifications, interactive broadcast funnels, and CRM-synced instant replies.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20WhatsApp%20Automation" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 18. Business Automation -->
+              <div class="service-card" data-category="ai">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">AI & Automation</span>
+                </div>
+                <h3 class="service-title">Business Automation</h3>
+                <p class="service-desc">
+                  Elimination of repetitive manual processes through custom scripts, webhook synchronization, and automated cross-platform data pipelines.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Business%20Automation" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 19. Custom Software Development -->
+              <div class="service-card" data-category="cloud">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                      <line x1="8" y1="21" x2="16" y2="21"/>
+                      <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Cloud & Software</span>
+                </div>
+                <h3 class="service-title">Custom Software Development</h3>
+                <p class="service-desc">
+                  Tailored enterprise software and internal management dashboards engineered specifically around your organizational workflows.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Custom%20Software%20Development" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 20. E-commerce Development -->
+              <div class="service-card" data-category="web">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="9" cy="21" r="1"/>
+                      <circle cx="20" cy="21" r="1"/>
+                      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Web & Platforms</span>
+                </div>
+                <h3 class="service-title">E-commerce Development</h3>
+                <p class="service-desc">
+                  Frictionless digital storefronts with seamless checkout flows, inventory management, global payment gateways, and order fulfillment.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20E-commerce%20Development" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 21. Multi-Vendor E-commerce Development -->
+              <div class="service-card" data-category="web">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Web & Platforms</span>
+                </div>
+                <h3 class="service-title">Multi-Vendor E-commerce Development</h3>
+                <p class="service-desc">
+                  Marketplace platforms empowering independent sellers with individual merchant portals, automated split-payouts, and admin commission engines.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Multi-Vendor%20E-commerce" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 22. SaaS Development -->
+              <div class="service-card" data-category="web">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                      <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                      <line x1="6" y1="6" x2="6.01" y2="6"/>
+                      <line x1="6" y1="18" x2="6.01" y2="18"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Web & Platforms</span>
+                </div>
+                <h3 class="service-title">SaaS Development</h3>
+                <p class="service-desc">
+                  Scalable software-as-a-service architectures featuring multi-tenant database designs, Stripe billing subscriptions, and granular role permissions.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20SaaS%20Development" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 23. API Integration -->
+              <div class="service-card" data-category="cloud">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Cloud & Software</span>
+                </div>
+                <h3 class="service-title">API Integration</h3>
+                <p class="service-desc">
+                  Seamless bridging between third-party systems, REST & GraphQL endpoints, payment processors, CRMs, and custom microservices.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20API%20Integration" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 24. Cloud and Deployment Solutions -->
+              <div class="service-card" data-category="cloud">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Cloud & Software</span>
+                </div>
+                <h3 class="service-title">Cloud and Deployment Solutions</h3>
+                <p class="service-desc">
+                  Continuous integration & deployment (CI/CD) pipelines, container orchestration, serverless setups, SSL hardening, and cloud infrastructure monitoring.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Cloud%20Solutions" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <!-- 25. Influencer Collaboration -->
+              <div class="service-card" data-category="growth">
+                <div class="service-card-top">
+                  <div class="service-icon-box">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                  <span class="service-category-badge">Digital Growth</span>
+                </div>
+                <h3 class="service-title">Influencer Collaboration</h3>
+                <p class="service-desc">
+                  Strategic influencer matchmaking, outreach management, brief coordination, and tracking authentic endorsements that amplify brand authority.
+                </p>
+                <a href="https://wa.me/917006505391?text=Hi%20Hanexa,%20I'm%20interested%20in%20Influencer%20Collaboration" target="_blank" rel="noopener noreferrer" class="service-action-link">
+                  <span>Discuss Requirements</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
               </div>
             </div>
-            <div class="services-grid">
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/infinity.svg" alt="" />
-                <h3>1. On-demand requests</h3>
-                <p>
-                  Put all your requests in the design queue in Trello, and we'll
-                  quickly knock them out 1 by 1, every time.
-                </p>
-              </div>
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/flash.svg" alt="" />
-                <h3>2. Top-notch quality</h3>
-                <p>
-                  High-end work from a dedicated team of senior designers that's
-                  always available when you need it.
-                </p>
-              </div>
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/w.svg" alt="" />
-                <h3>3. Powered by - Webflow</h3>
-                <p>
-                  We build every site on Webflow, making them dynamic,
-                  accessible, and easily scalable..
-                </p>
-              </div>
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/paint.svg" alt="" />
-                <h3>4. Fast & Responsive</h3>
-                <p>
-                  Get regular updates on your projects and can expect to receive
-                  your designs within 2-3 days.
-                </p>
-              </div>
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/calendar.svg" alt="" />
-                <h3>5. No Lock in contracts</h3>
-                <p>
-                  Pay the same every month, no surprises. You can use it for as
-                  long as you want and cancel anytime.
-                </p>
-              </div>
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/value.svg" alt="" />
-                <h3>6. Great value for money</h3>
-                <p>
-                  Get the power of dedicated design team at fraction of the cost
-                  of full-time employee.($54k/yr vs. $112k/yr).
-                </p>
-              </div>
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/setting.svg" alt="" />
-                <h3>7. Customized for you</h3>
-                <p>
-                  We design and build custom for you. We're never starting from
-                  a template unless you want that?
-                </p>
-              </div>
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/money.svg" alt="" />
-                <h3>8. Creative paying</h3>
-                <p>
-                  We're always here when you need us and never on payroll when
-                  you don't — flexible, dependable, & dedicated.
-                </p>
-              </div>
-              <div class="services-grid-item">
-                <img src="assets/images/icons/services/breifcase.svg" alt="" />
-                <h3>9. Expert turnovers</h3>
-                <p>
-                  You're getting over 10+ years of top-tier design experience
-                  with every request — no hand-holding required.
-                </p>
-              </div>
-            </div>
           </section>
-          <section id="portfolio">
-            <div class="title">
-              <h2>Our Beautiful Works</h2>
-              <p>
-                We help our clients grow their bottom-line with clear and
-                professional websites.
-              </p>
-            </div>
-            <section class="images">
-              <img
-                data-speed="0.8"
-                src="assets/images/portfolio/EDO_square_02.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.8"
-                src="assets/images/portfolio/dfat-poster.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.8"
-                src="assets/images/portfolio/key-insights.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.8"
-                src="assets/images/portfolio/oxfam-appeal-square.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.9"
-                src="assets/images/portfolio/cvgt-square.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.9"
-                src="assets/images/portfolio/dropbottle-square.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.9"
-                src="assets/images/portfolio/map-square.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed=".9"
-                src="assets/images/portfolio/unwrapped-animated-thumbnail-poster.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.8"
-                src="assets/images/portfolio/RWH_square_04.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.8"
-                src="assets/images/portfolio/Ader-square.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.8"
-                src="assets/images/portfolio/welcome-home-project-square.jpg.jpg"
-                alt=""
-              />
-              <img
-                data-speed="0.8"
-                src="assets/images/portfolio/bluegreen-square.jpg.jpg"
-                alt=""
-              />
-            </section>
-          </section>
-          <section class="section flex-column" id="testimonial">
-            <div class="title">
-              <p>TESTIMONIAL</p>
-              <h2>Customer is Our Top Priority</h2>
-              <p>
-                We survey all of our clients, the results of which go directly
-                to our CEO.
-              </p>
-            </div>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="testimonial-card swiper-slide">
-                  <div class="card-content flex-column">
-                    <h3>
-                      Xavron is the best digital agency I have ever seen! Highly
-                      Recommended!
-                    </h3>
-                    <p>
-                      I recently hired <strong>Xavron</strong> for a custom web
-                      development project and couldn't be happier with the
-                      results. The team was able to bring my unique ideas to
-                      life and made it truly stand out.
-                    </p>
-                    <div class="author">
-                      <p>Thomas Shelby</p>
-                      <p>CEO, Shelby Companies</p>
-                    </div>
+
+          <!-- About Hanexa Section -->
+          <section class="section" id="about">
+            <div class="about-grid">
+              <div class="about-text">
+                <div class="section-tag">ABOUT HANEXA</div>
+                <h3>Architecting High-Yield Digital Technology.</h3>
+                <p>
+                  Founded by <strong>Haneef Rather</strong>, Hanexa is a premier digital technology agency focused on building modern websites, mobile applications, software, artificial intelligence solutions, automation systems, and high-impact digital experiences.
+                </p>
+                <p>
+                  We operate with a technical-first ethos: every product we build is designed for measurable business velocity, immaculate visual distinction, and extreme architectural stability.
+                </p>
+
+                <div class="about-leadership-badge">
+                  <div class="founder-info-row">
+                    <span class="founder-label">Founder:</span>
+                    <strong class="founder-name">Haneef Rather</strong>
+                  </div>
+                  <div class="address-info-row">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Baba Pora, Zoonimar, Srinagar, Kashmir</span>
                   </div>
                 </div>
-                <div class="testimonial-card swiper-slide">
-                  <div class="card-content flex-column">
-                    <h3>
-                      Absolutely seamless from concept to launch. Xavron
-                      exceeded every expectation!
-                    </h3>
-                    <p>
-                      Choosing <strong>Xavron</strong> was the best decision for
-                      our online presence. Their creative ideas and commitment
-                      to quality gave our brand a bold new look.
-                    </p>
-                    <div class="author">
-                      <p>Sara Reyes</p>
-                      <p>Marketing Lead, Layers</p>
-                    </div>
-                  </div>
+
+                <div class="about-delivery-notice">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  <span>Serving clients across Kashmir, India, and worldwide.</span>
                 </div>
-                <div class="testimonial-card swiper-slide">
-                  <div class="card-content flex-column">
-                    <h3>
-                      Xavron made the whole process effortless—and the results
-                      speak for themselves.
-                    </h3>
-                    <p>
-                      What I loved about <strong>Xavron</strong> was their
-                      approachability and professionalism. Our brand looks
-                      sharper and our customers are taking notice.
-                    </p>
-                    <div class="author">
-                      <p>Priya Anand</p>
-                      <p>Operations Manager, Neonix</p>
-                    </div>
+
+                <a href="https://wa.me/917006505391" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <span>Start a Conversation</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+              <div class="about-pillars">
+                <div class="pillar-card">
+                  <div class="pillar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"/>
+                    </svg>
                   </div>
+                  <h4>Engineering Precision</h4>
+                  <p>Clean, maintainable source code free of technical debt or heavy bloat.</p>
                 </div>
-                <div class="testimonial-card swiper-slide">
-                  <div class="card-content flex-column">
-                    <h3>
-                      Xavron transformed our digital workflow—truly a partner in
-                      growth.
-                    </h3>
-                    <p>
-                      Working with <strong>Xavron</strong> gave our business new
-                      momentum. From the first meeting, they were invested in
-                      our challenges and delivered a site that drives results.
-                    </p>
-                    <div class="author">
-                      <p>Ethan Lee</p>
-                      <p>CEO, Hourglass</p>
-                    </div>
+
+                <div class="pillar-card">
+                  <div class="pillar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/>
+                    </svg>
                   </div>
+                  <h4>AI & Automation First</h4>
+                  <p>Harnessing autonomous workflows and intelligent agents to cut operational overhead.</p>
                 </div>
-                <div class="testimonial-card swiper-slide">
-                  <div class="card-content flex-column">
-                    <h3>
-                      Reliable, innovative, and genuinely caring about
-                      outcomes—Xavron is fantastic.
-                    </h3>
-                    <p>
-                      We turned to <strong>Xavron</strong> for a major UI
-                      overhaul. Our users noticed the difference immediately.
-                      Their team understands both aesthetics and performance.
-                    </p>
-                    <div class="author">
-                      <p>Alex Kim</p>
-                      <p>Head of Product, Quotient</p>
-                    </div>
+
+                <div class="pillar-card">
+                  <div class="pillar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                      <polyline points="2 17 12 22 22 17"/>
+                      <polyline points="2 12 12 17 22 12"/>
+                    </svg>
                   </div>
+                  <h4>Bespoke Aesthetics</h4>
+                  <p>Tailored user interfaces designed from scratch to reflect your brand's authority.</p>
+                </div>
+
+                <div class="pillar-card">
+                  <div class="pillar-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                      <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                  </div>
+                  <h4>Direct Accountability</h4>
+                  <p>Transparent progress, rapid replies, and reliable post-launch commitments.</p>
                 </div>
               </div>
             </div>
           </section>
-          <section class="section flex-column" id="pricing">
-            <div class="title">
-              <p>CLEAR AND SIMPLE PRICING</p>
-              <h2>Simple pricing to level up your brand.</h2>
-              <p>
-                Senior experts. On-demand requests. Fast turnarounds. Flat
-                monthly fee. Cancel anytime.
+
+          <!-- Process Section (6 Steps) -->
+          <section class="section" id="process">
+            <div class="section-header">
+              <div class="section-tag">OUR METHODOLOGY</div>
+              <h2 class="section-title">
+                The Disciplined <span class="highlight">Build Process</span>
+              </h2>
+              <p class="section-subtitle">
+                A streamlined, six-step engineering framework designed to convert ideas into resilient, production-ready digital products.
               </p>
             </div>
-            <div class="pricing-card-container flex">
-              <div class="pricing-card card-side flex-column">
-                <div class="card-title flex">
-                  <p>Basic - Weekly</p>
-                </div>
-                <p class="card-description">
-                  Perfect if you want to try the subscription out or only have a
-                  few one-off tasks.
+
+            <div class="process-timeline">
+              <!-- Step 1: Discover -->
+              <div class="process-card">
+                <div class="process-number">01</div>
+                <h3 class="process-step-title">Discover</h3>
+                <p class="process-step-desc">
+                  Understand the business, target audience, core objectives, and precise operational requirements.
                 </p>
-                <div class="card-pricing">
-                  <p>$890/m</p>
-                  <p>Paid per week</p>
-                </div>
-                <div class="card-benefits">
-                  <p>Fixed scope of work</p>
-                  <p>2 rounds of revision</p>
-                  <p>Dedicated project manager</p>
-                  <p>Daily comms through slack</p>
-                  <p>1x designer</p>
-                  <p>2-5 days turn around time</p>
-                  <p>Top tier design</p>
-                </div>
-                <div class="card-btns flex-column">
-                  <button class="btn">Book A Call</button>
-                  <button class="btn filled-btn">Click to buy</button>
-                </div>
               </div>
-              <div class="pricing-card card-center flex-column">
-                <div class="card-title flex">
-                  <p>Standard</p>
-                  <p class="btn">Most Popular</p>
-                </div>
-                <p class="card-description">
-                  One request at a time. For companies who need on-going design
-                  support.
+
+              <!-- Step 2: Plan -->
+              <div class="process-card">
+                <div class="process-number">02</div>
+                <h3 class="process-step-title">Plan</h3>
+                <p class="process-step-desc">
+                  Define technology stacks, database schemas, feature milestones, security posture, and rollout strategy.
                 </p>
-                <div class="card-pricing">
-                  <p>$2,995/m</p>
-                  <p>Pause or cancel anytime</p>
-                </div>
-                <div class="card-benefits">
-                  <p>1x active task at a time</p>
-                  <p>Unlimited revisions</p>
-                  <p>Dedicated project manager</p>
-                  <p>Daily comms through slack</p>
-                  <p>Work with senior designers</p>
-                  <p>2-5 days turn around time</p>
-                  <p>Top tier design</p>
-                </div>
-                <div class="card-btns flex-column">
-                  <button class="btn">Book A Call</button>
-                  <button class="btn filled-btn">Click to buy</button>
-                </div>
               </div>
-              <div class="pricing-card card-side flex-column">
-                <div class="card-title flex">
-                  <p>Growth</p>
-                  <p class="btn">Best value</p>
-                </div>
-                <p class="card-description">
-                  Double the requests. For companies with increasing design
-                  needs. Limited spots.
+
+              <!-- Step 3: Design -->
+              <div class="process-card">
+                <div class="process-number">03</div>
+                <h3 class="process-step-title">Design</h3>
+                <p class="process-step-desc">
+                  Create high-fidelity UI/UX, responsive components, interactive prototypes, and cohesive visual identity.
                 </p>
-                <div class="card-pricing">
-                  <p>$4,795/m</p>
-                  <p>Pause or cancel anytime</p>
+              </div>
+
+              <!-- Step 4: Build -->
+              <div class="process-card">
+                <div class="process-number">04</div>
+                <h3 class="process-step-title">Build</h3>
+                <p class="process-step-desc">
+                  Develop the website, mobile app, custom software, or autonomous system using clean, maintainable code.
+                </p>
+              </div>
+
+              <!-- Step 5: Test -->
+              <div class="process-card">
+                <div class="process-number">05</div>
+                <h3 class="process-step-title">Test</h3>
+                <p class="process-step-desc">
+                  Test performance, cross-device responsiveness, security standards, edge-cases, and end-to-end functionality.
+                </p>
+              </div>
+
+              <!-- Step 6: Launch -->
+              <div class="process-card">
+                <div class="process-number">06</div>
+                <h3 class="process-step-title">Launch</h3>
+                <p class="process-step-desc">
+                  Deploy the final product to production cloud environments and provide dedicated post-launch support.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Why Hanexa Section (9 Practical Pillars) -->
+          <section class="section" id="why-hanexa">
+            <div class="section-header">
+              <div class="section-tag">WHY WORK WITH US</div>
+              <h2 class="section-title">
+                Built Around <span class="highlight">Practical Value</span>
+              </h2>
+              <p class="section-subtitle">
+                We deliver engineering excellence without generic templates or bloated promises. Here is why clients rely on Hanexa.
+              </p>
+            </div>
+
+            <div class="why-grid">
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
                 </div>
-                <div class="card-benefits">
+                <h3 class="why-title">Custom Solutions</h3>
+                <p class="why-desc">Tailored architecture built from scratch for your specific business use-case, with zero generic cookie-cutter templates.</p>
+              </div>
+
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+                <h3 class="why-title">Modern Technology</h3>
+                <p class="why-desc">Engineered on contemporary, proven standards ensuring your digital assets remain fast, secure, and extensible.</p>
+              </div>
+
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <h3 class="why-title">Responsive Design</h3>
+                <p class="why-desc">Pixel-perfect user interfaces that adapt fluidly across smartphones, tablets, laptops, and ultra-wide desktops.</p>
+              </div>
+
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                </div>
+                <h3 class="why-title">High Performance</h3>
+                <p class="why-desc">Lightweight code, asset minification, and caching strategies delivering sub-second load times and high SEO scores.</p>
+              </div>
+
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <h3 class="why-title">Scalable Architecture</h3>
+                <p class="why-desc">Modular backend structures and database designs created to scale seamlessly as your user traffic grows.</p>
+              </div>
+
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/>
+                  </svg>
+                </div>
+                <h3 class="why-title">AI Integration</h3>
+                <p class="why-desc">Intelligent AI chatbots, automated voice calling agents, and machine learning models integrated natively.</p>
+              </div>
+
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                  </svg>
+                </div>
+                <h3 class="why-title">End-to-End Automation</h3>
+                <p class="why-desc">Streamline internal business operations, customer interactions, and lead routing through custom integrations.</p>
+              </div>
+
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <h3 class="why-title">Clear Communication</h3>
+                <p class="why-desc">Direct contact with the engineers building your software, with honest milestone reporting and zero runarounds.</p>
+              </div>
+
+              <div class="why-card">
+                <div class="why-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <h3 class="why-title">Post-Launch Support</h3>
+                <p class="why-desc">Ongoing technical assistance, routine security patches, and cloud maintenance ensuring stability over the long haul.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Portfolio / Conversion Section (Authentic, Zero Fake Case Studies) -->
+          <section class="section" id="portfolio">
+            <div class="portfolio-cta-box">
+              <div class="section-tag">PROJECT COLLABORATION</div>
+              <h3>Have a Project in Mind?</h3>
+              <p>
+                We partner directly with ambitious founders, business leaders, and technology teams to turn ideas into practical, high-performance digital products.
+              </p>
+              <a
+                href="https://wa.me/917006505391"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+                <span>Let's Build It</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- Client Stories Coming Soon (Authentic, Zero Fake Reviews) -->
+          <section class="section" id="stories" style="padding-top: 1rem; padding-bottom: 3.5rem;">
+            <div class="coming-soon-banner">
+              <h4>Client Stories Coming Soon</h4>
+              <p>
+                We are currently collaborating with businesses across India and worldwide on bespoke web, mobile, and AI solutions. Connect with us early to start building your milestone.
+              </p>
+            </div>
+          </section>
+
+          <!-- Pricing Section (Transparent Scoping) -->
+          <section class="section" id="pricing">
+            <div class="scoping-card">
+              <div class="scoping-grid">
+                <div class="scoping-content">
+                  <div class="section-tag">TRANSPARENT SCOPING</div>
+                  <h3>Every Project is Scoped Around Your Requirements.</h3>
                   <p>
-                    <strong style="color: #b9fd50">2x active task</strong> at a
-                    time
+                    Rather than forcing your business into rigid tiers or hidden recurring fees, Hanexa provides transparent, milestone-based quotes calibrated to your exact technical specifications.
                   </p>
-                  <p>Unlimited revisions</p>
-                  <p>Dedicated project manager</p>
-                  <p>Daily comms through slack</p>
-                  <p>Work with senior designers</p>
-                  <p>2-5 days turn around time</p>
-                  <p>Top tier design</p>
+
+                  <div class="scoping-features">
+                    <div class="scoping-feature-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="20 6 9 17 4 12"/>
+                      </svg>
+                      <span>Custom Technical Scope</span>
+                    </div>
+                    <div class="scoping-feature-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="20 6 9 17 4 12"/>
+                      </svg>
+                      <span>Milestone-Based Delivery</span>
+                    </div>
+                    <div class="scoping-feature-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="20 6 9 17 4 12"/>
+                      </svg>
+                      <span>100% Code Ownership</span>
+                    </div>
+                    <div class="scoping-feature-item">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="20 6 9 17 4 12"/>
+                      </svg>
+                      <span>Post-Launch Assurance</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-btns flex-column">
-                  <button class="btn">Book A Call</button>
-                  <button class="btn filled-btn">Click to buy</button>
+
+                <div class="scoping-card-cta">
+                  <h4>Ready to Scope Your Build?</h4>
+                  <p>Share your feature wishlist and receive a straightforward timeline and estimate.</p>
+                  <a
+                    href="https://wa.me/917006505391"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                  >
+                    <span>Get a Quote</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
                 </div>
               </div>
             </div>
           </section>
-          <section class="section flex-column" id="blogs">
-            <div class="title">
-              <p>BLOGS</p>
-              <h2>News & Articles</h2>
-              <p>Best Articles to get started</p>
+
+          <!-- FAQ Section (Accordion) -->
+          <section class="section" id="faq">
+            <div class="section-header">
+              <div class="section-tag">FREQUENTLY ASKED QUESTIONS</div>
+              <h2 class="section-title">
+                Common Inquiries & <span class="highlight">Clear Answers</span>
+              </h2>
+              <p class="section-subtitle">
+                Everything you need to know about partnering with Hanexa for your next digital build.
+              </p>
             </div>
-            <div class="blogs-content flex">
-              <div class="blog-card flex">
-                <div class="blog-card__img flex">
-                  <img
-                    src="assets/images/blog/blog1.jpg"
-                    alt="Blog post image"
-                  />
-                </div>
-                <div class="blog-card__content flex-column">
-                  <span class="blog-card__tag">Branding</span>
-                  <h2 class="blog-card__title">
-                    What is the branding,<br />
-                    and why we need it?
-                  </h2>
-                  <p class="blog-card__desc">
-                    On the other hand, we denounce with righteous indignation
-                    and...
+
+            <div class="faq-container">
+              <!-- Q1 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">What services does Hanexa provide?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Hanexa is a full-spectrum digital technology agency. We provide website development, web applications, mobile apps (iOS, Android, Flutter), AI solutions & chatbots, AI calling agents, WhatsApp automation, business automation, UI/UX design, branding, digital marketing, SaaS engineering, and cloud deployment.
                   </p>
                 </div>
               </div>
-              <div class="blog-card flex">
-                <div class="blog-card__img flex">
-                  <img
-                    src="assets/images/blog/blog2.jpg"
-                    alt="Blog post image"
-                  />
-                </div>
-                <div class="blog-card__content flex-column">
-                  <span class="blog-card__tag">Design</span>
-                  <h2 class="blog-card__title">
-                    What makes great design timeless?
-                  </h2>
-                  <p class="blog-card__desc">
-                    Great design blends functionality and beauty to create
-                    lasting impressions. Discover how...
+
+              <!-- Q2 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">Do you build custom websites?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Yes. Every website we produce is custom designed and engineered to fit your exact brand guidelines and performance criteria. We do not recycle bloated templates.
                   </p>
                 </div>
               </div>
-              <div class="blog-card flex">
-                <div class="blog-card__img flex">
-                  <img
-                    src="assets/images/blog/blog3.jpg"
-                    alt="Blog post image"
-                  />
-                </div>
-                <div class="blog-card__content flex-column">
-                  <span class="blog-card__tag">Marketing</span>
-                  <h2 class="blog-card__title">
-                    How to craft compelling messages?
-                  </h2>
-                  <p class="blog-card__desc">
-                    Effective marketing speaks directly to your audience's needs
-                    and...
+
+              <!-- Q3 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">Do you build mobile applications?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Yes. We develop cross-platform mobile apps using modern frameworks like Flutter as well as native mobile stacks, ensuring smooth performance, push notification handling, and store publication.
                   </p>
                 </div>
               </div>
-              <div class="blog-card flex">
-                <div class="blog-card__img flex">
-                  <img
-                    src="assets/images/blog/blog4.jpg"
-                    alt="Blog post image"
-                  />
-                </div>
-                <div class="blog-card__content flex-column">
-                  <span class="blog-card__tag">UX/UI</span>
-                  <h2 class="blog-card__title">
-                    Why does user experience matter so much?
-                  </h2>
-                  <p class="blog-card__desc">
-                    A seamless, intuitive UI keeps users engaged and delighted.
-                    Explore tips to...
+
+              <!-- Q4 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">Can you build AI chatbots?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Absolutely. We build autonomous AI chatbots trained on your internal documentation, product catalogs, or FAQs, capable of providing human-like responses across websites, WhatsApp, and social channels.
                   </p>
                 </div>
               </div>
-              <div class="blog-card flex">
-                <div class="blog-card__img flex">
-                  <img
-                    src="assets/images/blog/blog5.jpg"
-                    alt="Blog post image"
-                  />
-                </div>
-                <div class="blog-card__content flex-column">
-                  <span class="blog-card__tag">Brand Strategy</span>
-                  <h2 class="blog-card__title">What sets your brand apart?</h2>
-                  <p class="blog-card__desc">
-                    Successful brands define their mission and voice clearly.
-                    Build loyalty and...
+
+              <!-- Q5 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">Can you integrate APIs?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Yes. We integrate REST and GraphQL APIs, payment gateways (Stripe, Razorpay, PayPal), CRM systems, ERPs, WhatsApp Business API, and automated third-party webhooks.
                   </p>
                 </div>
               </div>
-              <div class="blog-card flex">
-                <div class="blog-card__img flex">
-                  <img
-                    src="assets/images/blog/blog6.jpg"
-                    alt="Blog post image"
-                  />
+
+              <!-- Q6 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">Do you provide e-commerce development?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Yes. We create single-brand online stores as well as multi-vendor marketplace platforms with vendor dashboards, automated inventory tracking, and seamless checkout pipelines.
+                  </p>
                 </div>
-                <div class="blog-card__content flex-column">
-                  <span class="blog-card__tag">Social Media</span>
-                  <h2 class="blog-card__title">
-                    Maximizing your social impact
-                  </h2>
-                  <p class="blog-card__desc">
-                    Social platforms provide a powerful stage for authentic
-                    storytelling. Learn ways to...
+              </div>
+
+              <!-- Q7 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">Can you build SaaS products?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Yes. We architect complete Software-as-a-Service applications from scratch, including subscription billing, multi-tenant databases, authentication, user tier management, and responsive analytics portals.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Q8 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">Do you provide post-launch support?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Yes. Following product launch, we offer continuous maintenance packages, server uptime monitoring, security updates, and on-demand feature iterations.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Q9 -->
+              <div class="faq-item">
+                <button class="faq-button" aria-expanded="false">
+                  <span class="faq-title">How can I start a project with Hanexa?</span>
+                  <span class="faq-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </span>
+                </button>
+                <div class="faq-content">
+                  <p>
+                    Starting is easy and direct. Tap the "Chat on WhatsApp" button or reach out to +91 70065 05391. Send us a brief overview of what you wish to build, and we will guide you through scope, timeline, and execution.
                   </p>
                 </div>
               </div>
             </div>
-            <button class="btn load-more-btn"><span>LOAD MORE</span></button>
           </section>
-          <section class="section flex-column" id="faq">
-            <div class="title">
-              <h2>FAQ's</h2>
-              <p>Providing answers to your questions</p>
-            </div>
-            <div class="faq-content flex-column">
-              <div class="accordion flex-column">
-                <div class="accordion-item">
-                  <button
-                    id="accordion-button-1"
-                    class="flex"
-                    aria-expanded="false"
-                  >
-                    <p class="accordion-title">
-                      What services does your agency offer?
-                    </p>
-                    <img
-                      src="assets/images/icons/faq/arrowDown.svg"
-                      alt=""
-                      class="icon"
-                    />
-                  </button>
-                  <div class="accordion-content">
-                    <p>
-                      We provide custom web development, UI/UX design, branding,
-                      digital marketing, and ongoing support to help your
-                      business grow.
-                    </p>
+
+          <!-- Contact Section -->
+          <section class="section" id="contact">
+            <div class="contact-card-box">
+              <div class="contact-info-col">
+                <div class="section-tag">CONTACT HANEXA</div>
+                <h3>Let's Build Something Great.</h3>
+                <p class="lead">
+                  Tell us what you are building. We'll help you turn the idea into a practical digital product.
+                </p>
+
+                <div class="contact-details-list">
+                  <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                      </svg>
+                    </div>
+                    <div class="contact-detail-text">
+                      <span class="label">WhatsApp & Phone</span>
+                      <a href="https://wa.me/917006505391" target="_blank" rel="noopener noreferrer" class="value">
+                        +91 70065 05391
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                      </svg>
+                    </div>
+                    <div class="contact-detail-text">
+                      <span class="label">Founder & Leadership</span>
+                      <span class="value">Haneef Rather</span>
+                    </div>
+                  </div>
+
+                  <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                      </svg>
+                    </div>
+                    <div class="contact-detail-text">
+                      <span class="label">Office Address</span>
+                      <span class="value">Baba Pora, Zoonimar, Srinagar, Kashmir</span>
+                    </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <button
-                    id="accordion-button-1"
-                    class="flex"
-                    aria-expanded="false"
-                  >
-                    <p class="accordion-title">
-                      How long does a typical project take?
-                    </p>
-                    <img
-                      src="assets/images/icons/faq/arrowDown.svg"
-                      alt=""
-                      class="icon"
-                    />
-                  </button>
-                  <div class="accordion-content">
-                    <p>
-                      Project timelines vary by scope but generally range from 4
-                      to 12 weeks, depending on complexity and requirements.
-                    </p>
-                  </div>
+
+                <div class="remote-badge-banner">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  <span>Serving clients locally in Kashmir, across India, and globally.</span>
                 </div>
-                <div class="accordion-item">
-                  <button
-                    id="accordion-button-1"
-                    class="flex"
-                    aria-expanded="false"
+
+                <div style="margin-top: 2rem;">
+                  <a
+                    href="https://wa.me/917006505391"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-whatsapp"
                   >
-                    <p class="accordion-title">
-                      Can I pause or cancel my subscription anytime?
-                    </p>
-                    <img
-                      src="assets/images/icons/faq/arrowDown.svg"
-                      alt=""
-                      class="icon"
-                    />
-                  </button>
-                  <div class="accordion-content">
-                    <p>
-                      Yes, all our subscription plans offer flexibility—you can
-                      pause or cancel anytime without penalties.
-                    </p>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <button
-                    id="accordion-button-1"
-                    class="flex"
-                    aria-expanded="false"
-                  >
-                    <p class="accordion-title">
-                      Do you offer dedicated project managers?
-                    </p>
-                    <img
-                      src="assets/images/icons/faq/arrowDown.svg"
-                      alt=""
-                      class="icon"
-                    />
-                  </button>
-                  <div class="accordion-content">
-                    <p>
-                      Absolutely. Every project is managed by an experienced
-                      project manager who serves as your primary point of
-                      contact.
-                    </p>
-                  </div>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                    </svg>
+                    <span>Chat on WhatsApp</span>
+                  </a>
                 </div>
               </div>
-              <form action="#" id="myform" class="flex-column">
-                <label for="textarea">
-                  Your Message
-                  <textarea name="message" id="textarea" required></textarea>
-                </label>
-                <div class="flex">
-                  <label for="email">
-                    Your Email <br />
-                    <input type="email" name="email" id="email" required />
-                  </label>
-                  <button class="btn filled-btn" type="submit">Send</button>
-                </div>
-                <p>We will answer your questions via email within 48 hours.</p>
-              </form>
+
+              <!-- Quick WhatsApp Inquiry Builder -->
+              <div class="contact-form-col">
+                <h4>Quick Project Inquiry</h4>
+                <p class="form-note">
+                  Fill in your project details to launch a pre-formatted direct chat on WhatsApp.
+                </p>
+
+                <form id="hanexa-inquiry-form">
+                  <div class="form-group">
+                    <label for="project-type" class="form-label">Service Required</label>
+                    <select id="project-type" class="form-select">
+                      <option value="Website Development">Website Development</option>
+                      <option value="Web Application">Web Application Development</option>
+                      <option value="Mobile App Development">Mobile App Development</option>
+                      <option value="AI Solutions & Chatbots">AI Solutions & Chatbots</option>
+                      <option value="Business Automation">Business Automation</option>
+                      <option value="UI/UX & Branding">UI/UX & Branding</option>
+                      <option value="E-commerce & SaaS">E-commerce / SaaS Development</option>
+                      <option value="Other Project">Other Custom Project</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="client-name" class="form-label">Your Name</label>
+                    <input type="text" id="client-name" class="form-input" placeholder="e.g. Alex" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="project-details" class="form-label">Project Overview</label>
+                    <textarea id="project-details" class="form-textarea" placeholder="Briefly describe what you would like to build..." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+                    <span>Send via WhatsApp</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </button>
+                </form>
+              </div>
             </div>
           </section>
         </main>
-        <footer class="flex-column" id="footer">
-          <div class="cta flex-column">
-            <h2>Become part of the design revolution</h2>
-            <p>Jump on a membership and start requesting designs right away!</p>
-            <a href="#pricing">
-              <button class="btn filled-btn">See Pricing</button>
-            </a>
-            <div class="glow"></div>
-          </div>
-          <div class="footer-content flex-column">
-            <div class="footer-info flex">
-              <div class="footer-left flex-column">
-                <p class="logo">Xev<span>ron</span></p>
-                <p>
-                  Xevron - the leading digital agency based in <br />
-                  XYZ, working with top-tier clients, from <br />
-                  start-ups to enterprises.
-                </p>
-              </div>
-              <div class="footer-right flex-column">
-                <div class="contact flex">
-                  <img
-                    src="assets/images/icons/footer/email.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>info@xevron.com</p>
-                </div>
-                <div class="contact flex">
-                  <img
-                    src="assets/images/icons/footer/phone.svg"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <p>(001) 1231 3435</p>
-                </div>
-                <div class="contact flex">
-                  <!-- LinkdIn -->
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 9 9"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M3.3213 3.48768H4.75532V4.20199C4.96189 3.79117 5.49163 3.42204 6.28741 3.42204C7.81293 3.42204 8.1751 4.23983 8.1751 5.74026V8.5191H6.63066V6.08196C6.63066 5.2275 6.42409 4.74563 5.89821 4.74563C5.16884 4.74563 4.86574 5.26495 4.86574 6.08158V8.5191H3.3213V3.48768ZM0.672964 8.45346H2.21741V3.42204H0.672964V8.45346ZM2.43865 1.78146C2.43871 1.91091 2.41303 2.03909 2.36312 2.15853C2.31321 2.27797 2.24005 2.38631 2.14791 2.47723C1.96119 2.6628 1.70844 2.76668 1.44519 2.76604C1.1824 2.76587 0.930234 2.66225 0.743236 2.47762C0.651424 2.38638 0.578516 2.27793 0.528691 2.15847C0.478867 2.03901 0.453104 1.91089 0.452881 1.78146C0.452881 1.52006 0.557131 1.26986 0.743623 1.0853C0.930456 0.900414 1.18272 0.796759 1.44557 0.796875C1.7089 0.796875 1.96142 0.900739 2.14791 1.0853C2.33401 1.26986 2.43865 1.52006 2.43865 1.78146Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <!-- Dribble -->
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 10 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M4.8472 0.638672C2.28921 0.638672 0.213867 2.71402 0.213867 5.27201C0.213867 7.82999 2.28921 9.90534 4.8472 9.90534C7.40017 9.90534 9.48053 7.82999 9.48053 5.27201C9.48053 2.71402 7.40017 0.638672 4.8472 0.638672ZM7.90752 2.77425C8.47799 3.469 8.79366 4.33796 8.80214 5.23687C8.67163 5.21177 7.36503 4.94536 6.04839 5.11138C6.01789 5.04574 5.99279 4.97547 5.96268 4.9052C5.88079 4.71191 5.79375 4.52085 5.70166 4.33221C7.15885 3.73914 7.82219 2.88507 7.90752 2.77425ZM4.8472 1.32247C5.85225 1.32247 6.77196 1.69893 7.47044 2.3171C7.40017 2.41749 6.80208 3.21674 5.39509 3.74416C4.74643 2.5534 4.02826 1.57808 3.91744 1.4275C4.22221 1.35633 4.53424 1.32134 4.8472 1.32247ZM3.16376 1.69391C3.26916 1.83484 3.97266 2.81479 4.63098 3.98046C2.78151 4.47314 1.14826 4.4631 0.972576 4.4631C1.22895 3.23681 2.05832 2.21671 3.16376 1.69391ZM0.887245 5.27702V5.15656C1.05829 5.16158 2.97765 5.18667 4.95299 4.59361C5.06844 4.81485 5.17385 5.04072 5.27424 5.26699C5.22405 5.28204 5.16883 5.2971 5.11864 5.31216C3.07843 5.97048 1.99268 7.76937 1.90233 7.92034C1.2488 7.19504 0.887168 6.25333 0.887245 5.27702ZM4.8472 9.23196C3.9325 9.23196 3.08846 8.92037 2.42011 8.39796C2.49038 8.25201 3.29426 6.70409 5.5256 5.92531C5.53564 5.92029 5.54104 5.92029 5.55069 5.91527C6.10863 7.35739 6.3345 8.56862 6.39512 8.91535C5.9175 9.12153 5.39509 9.23196 4.8472 9.23196ZM7.05344 8.55356C7.01328 8.31224 6.80208 7.15661 6.28431 5.73418C7.52565 5.53842 8.61101 5.86005 8.74692 5.90523C8.57588 7.00564 7.94265 7.95548 7.05344 8.55356Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <!-- Instagram -->
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 10 9"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M3.02953 0.436128C3.48244 0.415278 3.62685 0.410645 4.78055 0.410645C5.93425 0.410645 6.07865 0.415664 6.53118 0.436128C6.9837 0.456592 7.29259 0.528795 7.56286 0.633431C7.84588 0.740383 8.10265 0.90757 8.31501 1.12379C8.53123 1.33577 8.69803 1.59214 8.8046 1.87555C8.90962 2.14583 8.98144 2.45472 9.00229 2.90647C9.02314 3.36015 9.02777 3.50455 9.02777 4.65787C9.02777 5.81157 9.02275 5.95597 9.00229 6.40888C8.98182 6.86063 8.90962 7.16952 8.8046 7.4398C8.69803 7.72324 8.53095 7.98004 8.31501 8.19233C8.10265 8.40855 7.84588 8.57535 7.56286 8.68192C7.29259 8.78694 6.9837 8.85876 6.53195 8.87961C6.07865 8.90046 5.93425 8.90509 4.78055 8.90509C3.62685 8.90509 3.48244 8.90007 3.02953 8.87961C2.57778 8.85914 2.26889 8.78694 1.99862 8.68192C1.71518 8.57534 1.45838 8.40826 1.24609 8.19233C1.03001 7.98023 0.8628 7.72355 0.756111 7.44018C0.651475 7.16991 0.579659 6.86102 0.558809 6.40927C0.537959 5.95559 0.533325 5.81118 0.533325 4.65787C0.533325 3.50417 0.538345 3.35976 0.558809 2.90724C0.579272 2.45472 0.651475 2.14583 0.756111 1.87555C0.862957 1.59218 1.0303 1.3355 1.24647 1.12341C1.45846 0.907377 1.71501 0.740169 1.99823 0.633431C2.26851 0.528795 2.5774 0.456978 3.02915 0.436128H3.02953ZM6.49681 1.20063C6.04892 1.18016 5.91456 1.17592 4.78055 1.17592C3.64654 1.17592 3.51217 1.18016 3.06428 1.20063C2.64999 1.21955 2.42527 1.28866 2.27546 1.34696C2.07738 1.42419 1.93568 1.51569 1.78703 1.66435C1.64611 1.80144 1.53767 1.96833 1.46964 2.15278C1.41134 2.30259 1.34223 2.52731 1.32331 2.9416C1.30284 3.38949 1.2986 3.52386 1.2986 4.65787C1.2986 5.79188 1.30284 5.92624 1.32331 6.37413C1.34223 6.78843 1.41134 7.01315 1.46964 7.16296C1.5376 7.34713 1.6461 7.51432 1.78703 7.65139C1.9241 7.79232 2.09128 7.90082 2.27546 7.96877C2.42527 8.02707 2.64999 8.09619 3.06428 8.11511C3.51217 8.13557 3.64615 8.13982 4.78055 8.13982C5.91494 8.13982 6.04892 8.13557 6.49681 8.11511C6.91111 8.09619 7.13583 8.02707 7.28564 7.96877C7.48371 7.89155 7.62541 7.80004 7.77407 7.65139C7.915 7.51432 8.0235 7.34713 8.09145 7.16296C8.14975 7.01315 8.21887 6.78843 8.23779 6.37413C8.25825 5.92624 8.2625 5.79188 8.2625 4.65787C8.2625 3.52386 8.25825 3.38949 8.23779 2.9416C8.21887 2.52731 8.14975 2.30259 8.09145 2.15278C8.01423 1.9547 7.92272 1.813 7.77407 1.66435C7.63697 1.52344 7.47008 1.415 7.28564 1.34696C7.13583 1.28866 6.91111 1.21955 6.49681 1.20063ZM4.23806 5.96717C4.54103 6.09329 4.87838 6.11031 5.1925 6.01533C5.50662 5.92035 5.77802 5.71925 5.96035 5.4464C6.14268 5.17355 6.22462 4.84585 6.19219 4.51929C6.15975 4.19273 6.01495 3.88756 5.78251 3.65591C5.63433 3.50783 5.45517 3.39444 5.25791 3.32391C5.06065 3.25338 4.85021 3.22746 4.64174 3.24803C4.43326 3.26859 4.23194 3.33512 4.05227 3.44283C3.87259 3.55053 3.71903 3.69674 3.60264 3.87092C3.48625 4.04509 3.40993 4.24291 3.37916 4.45012C3.3484 4.65734 3.36396 4.8688 3.42473 5.06927C3.4855 5.26975 3.58997 5.45426 3.7306 5.60952C3.87124 5.76478 4.04455 5.88693 4.23806 5.96717ZM3.23688 3.11419C3.43959 2.91148 3.68025 2.75067 3.94512 2.64096C4.20998 2.53125 4.49386 2.47478 4.78055 2.47478C5.06723 2.47478 5.35111 2.53125 5.61598 2.64096C5.88084 2.75067 6.1215 2.91148 6.32422 3.11419C6.52694 3.31691 6.68774 3.55757 6.79745 3.82244C6.90716 4.0873 6.96363 4.37118 6.96363 4.65787C6.96363 4.94455 6.90716 5.22843 6.79745 5.4933C6.68774 5.75816 6.52694 5.99882 6.32422 6.20154C5.91481 6.61095 5.35954 6.84095 4.78055 6.84095C4.20156 6.84095 3.64628 6.61095 3.23688 6.20154C2.82747 5.79213 2.59747 5.23686 2.59747 4.65787C2.59747 4.07888 2.82747 3.5236 3.23688 3.11419ZM7.4478 2.7999C7.49804 2.75251 7.53825 2.69553 7.56607 2.63232C7.59389 2.56911 7.60874 2.50096 7.60975 2.43191C7.61075 2.36286 7.59789 2.29431 7.57193 2.23031C7.54597 2.16632 7.50743 2.10819 7.4586 2.05935C7.40977 2.01052 7.35163 1.97198 7.28764 1.94602C7.22365 1.92006 7.1551 1.9072 7.08604 1.90821C7.01699 1.90922 6.94884 1.92407 6.88564 1.95188C6.82243 1.9797 6.76544 2.01992 6.71805 2.07015C6.62589 2.16785 6.57544 2.29762 6.57739 2.43191C6.57935 2.5662 6.63357 2.69445 6.72854 2.78941C6.82351 2.88438 6.95175 2.9386 7.08604 2.94056C7.22034 2.94252 7.35011 2.89206 7.4478 2.7999Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <!-- Twitter (X) -->
-                  <svg
-                    width="25"
-                    height="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    enable-background="new 0 0 72 72"
-                    viewBox="0 0 72 72"
-                    id="twitter-x"
-                  >
-                    <switch>
-                      <g>
-                        <path
-                          d="M42.5,31.2L66,6h-6L39.8,27.6L24,6H4l24.6,33.6L4,66
-                        h6l21.3-22.8L48,66h20L42.5,31.2z M12.9,10h8l38.1,52h-8L12.9,10z"
-                          fill="#fff"
-                        ></path>
-                      </g>
-                    </switch>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="footer-nav flex">
-              <div class="nav-links flex">
-                <a href="#process">Process</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#faq">FAQ</a>
-              </div>
+
+        <!-- Footer -->
+        <footer>
+          <div class="footer-top">
+            <div class="footer-brand">
+              <a href="#hero" class="logo">
+                <span class="logo-text">HANEXA</span>
+                <span class="logo-dot"></span>
+              </a>
               <p>
-                © 2025
-                <a
-                  href="https://aqeelsheikh.netlify.app/"
-                  style="text-decoration: none; color: #fff"
-                  >AqeelSheikh</a
-                >
-                - All Rights Reserved
+                Hanexa is a digital technology agency creating high-performance websites, mobile applications, software, AI solutions, and automated workflows.
               </p>
+              <div style="font-size: 0.88rem; color: #f8fafc; font-weight: 600; margin-bottom: 0.35rem;">
+                Founder: Haneef Rather
+              </div>
+              <div style="font-size: 0.84rem; color: #94a3b8; line-height: 1.5;">
+                Baba Pora, Zoonimar, Srinagar, Kashmir
+              </div>
             </div>
+
+            <div class="footer-col">
+              <h5>Services</h5>
+              <ul class="footer-links">
+                <li><a href="#services">Web Development</a></li>
+                <li><a href="#services">Mobile Applications</a></li>
+                <li><a href="#services">AI & Chatbots</a></li>
+                <li><a href="#services">Business Automation</a></li>
+                <li><a href="#services">UI/UX & Design</a></li>
+                <li><a href="#services">SaaS & Cloud</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h5>Company</h5>
+              <ul class="footer-links">
+                <li><a href="#about">About Hanexa</a></li>
+                <li><a href="#process">Our Process</a></li>
+                <li><a href="#why-hanexa">Why Hanexa</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#pricing">Pricing Model</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h5>Contact</h5>
+              <ul class="footer-links">
+                <li>
+                  <a href="https://wa.me/917006505391" target="_blank" rel="noopener noreferrer" style="color: #25d366; font-weight: 600;">
+                    WhatsApp: +91 70065 05391
+                  </a>
+                </li>
+                <li><span style="color: #cbd5e1; font-size: 0.85rem;">Baba Pora, Zoonimar, Srinagar</span></li>
+                <li><a href="#contact">Start a Project</a></li>
+                <li><span style="color: var(--text-dim);">Serving Clients Worldwide</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© 2026 Hanexa. All rights reserved.</p>
+            <p>Engineered for high performance and scalability.</p>
           </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <!-- Floating WhatsApp Widget -->
+        <a
+          href="https://wa.me/917006505391"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="floating-whatsapp"
+          aria-label="Chat with Hanexa on WhatsApp"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+        </button>
+
+        <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
       </div>
     </div>

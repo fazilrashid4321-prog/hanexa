@@ -1,84 +1,27 @@
-# Xevron – Digital Agency Website Template
+# Hanexa – Digital Technology Agency
 
-Welcome to **Xevron**, a showcase of my front-end development and UI/UX design skills. This project demonstrates my ability to craft modern, interactive, and conversion-focused websites for agencies and creative businesses.
+Official website for **Hanexa**, a digital technology agency providing custom websites, mobile applications, software engineering, AI solutions, business automation, and digital growth services.
 
----
+## 🚀 Core Capabilities
+- **Web & Platform Engineering**: Website Development, Web Application Development, E-commerce Development, Multi-Vendor E-commerce Development, SaaS Development.
+- **Mobile App Engineering**: Mobile App Development (iOS & Android), Flutter App Development.
+- **AI Solutions & Automation**: Custom AI Solutions, AI Chatbots, AI Calling Agents, WhatsApp Automation, Business Automation.
+- **UI/UX & Creative**: UI/UX Design, Graphic Design, Logo Design, Video Editing, Motion Graphics.
+- **Digital Growth**: Social Media Management, Digital Marketing, Meta Ads, SEO, Influencer Collaboration.
+- **Cloud & Custom Software**: Custom Software Development, API Integration, Cloud and Deployment Solutions.
 
-## ✨ Project Highlights
+## 🛠️ Technology Stack
+- **HTML5** & semantic markup
+- **CSS3** with modern custom properties, glassmorphism, responsive grid & flexbox
+- **Vanilla JavaScript** (modular, lightweight, zero framework overhead)
+- **GSAP & ScrollTrigger** for micro-interactions and scroll-driven reveals
+- **Swiper.js** for responsive carousels
 
-- **Premium User Experience:**  
-  Smooth scrolling, animated transitions, and engaging interactions powered by GSAP and Swiper.js.
-
-- **Responsive & Accessible:**  
-  Fully optimized for all devices and screen sizes, with clear navigation and readable content.
-
-- **Dynamic Portfolio & Testimonials:**  
-  Parallax portfolio gallery and carousel for authentic client feedback.
-
-- **Modular & Maintainable Code:**  
-  Clean structure, reusable components, and easy customization for future scalability.
-
----
-
-## 📁 Structure & Technologies
-
-```
-assets/
-  css/        # Custom stylesheets
-  fonts/      # Web fonts (Outfit, Poppins)
-  images/     # Optimized images & SVG icons
-  js/         # Main JavaScript logic
-index.html    # Landing page
-```
-
-- **HTML5, CSS3, JavaScript (ES6)**
-- **GSAP** for scroll animations and effects
-- **Swiper.js** for testimonial slider
+## 📞 Direct Contact & Leadership
+- **Founder**: Haneef Rather
+- **Office Address**: Baba Pora, Zoonimar, Srinagar, Kashmir
+- **WhatsApp / Phone**: [+91 70065 05391](https://wa.me/917006505391)
+- **Delivery**: Serving clients across Kashmir, India, and worldwide.
 
 ---
-
-## 🚀 How to Use
-
-1. **Clone or Download:**
-   ```bash
-   git clone https://github.com/aqeel-sheikh/Xevron.git
-   ```
-2. **Open `index.html` in your browser.**
-3. **Customize:**  
-   - Replace images and text with your brand assets.
-   - Tweak styles in `assets/css/style.css` for your color palette.
-
----
-
-## 💡 Why Xevron?
-
-This template is designed to impress potential clients with:
-
-- **Attention to Detail:**  
-  Every section is thoughtfully crafted for clarity and impact.
-- **Performance:**  
-  Optimized assets and smooth interactions for a delightful browsing experience.
-- **Scalability:**  
-  Easily adaptable for any agency, freelancer, or creative portfolio.
-
----
-
-## 👨‍💻 About Me
-
-I'm passionate about building digital experiences that drive results.  
-If you like what you see, let's work together!
-
-- **Portfolio:** [aqeelSheikh](https://aqeelsheikh.netlify.app)
-- **Email:** [sheikhakeelw01@gmail.com](mailto:sheikhakeelw01@gmail.com)
-- **X:** [aqeell_sheikh](https://x.com/aqeell_sheikh)
-
----
-
-## 📄 License
-
-Open for personal and commercial use.  
-Attribution is appreciated!
-
----
-
-*Thank you for viewing Xevron. I look forward to helping you elevate your digital presence!*
+© 2026 Hanexa. All rights reserved.
